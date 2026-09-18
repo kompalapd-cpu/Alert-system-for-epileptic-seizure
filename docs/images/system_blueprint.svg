@@ -1,0 +1,136 @@
+<svg viewBox="0 0 1200 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b1140"/>
+      <stop offset="55%" stop-color="#2a1968"/>
+      <stop offset="100%" stop-color="#0f2b52"/>
+    </linearGradient>
+
+    <linearGradient id="node1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6b81"/>
+      <stop offset="100%" stop-color="#ff9a56"/>
+    </linearGradient>
+    <linearGradient id="node2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="node3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#ffcc70"/>
+    </linearGradient>
+    <linearGradient id="node4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#43e97b"/>
+      <stop offset="100%" stop-color="#38f9d7"/>
+    </linearGradient>
+    <linearGradient id="node5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffffff" opacity="0.85"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="640" fill="url(#bg)"/>
+
+  <!-- soft decorative background circles -->
+  <circle cx="120" cy="560" r="140" fill="#ffffff" opacity="0.03"/>
+  <circle cx="1080" cy="80" r="180" fill="#ffffff" opacity="0.03"/>
+  <circle cx="600" cy="20" r="90" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Title -->
+  <text x="600" y="62" fill="#ffffff" font-size="30" font-weight="700" text-anchor="middle">Seizure Alert &amp; Response System</text>
+  <text x="600" y="92" fill="#c9c3f0" font-size="15" text-anchor="middle" letter-spacing="0.5">from a wristband sensor to an unlocked door — in under 10 seconds</text>
+
+  <!-- ============ CONNECTORS (drawn first, behind nodes) ============ -->
+  <path d="M 195 300 C 280 300, 280 300, 355 300" stroke="#ffffff" stroke-width="2.5" opacity="0.55" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="1 10" stroke-linecap="round"/>
+  <path d="M 435 300 C 520 300, 520 300, 595 300" stroke="#ffffff" stroke-width="2.5" opacity="0.55" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="1 10" stroke-linecap="round"/>
+  <path d="M 675 300 C 760 300, 760 300, 835 300" stroke="#ffffff" stroke-width="2.5" opacity="0.55" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="1 10" stroke-linecap="round"/>
+  <path d="M 615 355 C 615 420, 615 420, 615 455" stroke="#ffffff" stroke-width="2.5" opacity="0.55" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="1 10" stroke-linecap="round"/>
+
+  <!-- connector micro-labels -->
+  <text x="275" y="285" fill="#e9e6ff" font-size="11.5" text-anchor="middle" opacity="0.85">serial</text>
+  <text x="515" y="285" fill="#e9e6ff" font-size="11.5" text-anchor="middle" opacity="0.85">Wi‑Fi</text>
+  <text x="795" y="285" fill="#e9e6ff" font-size="11.5" text-anchor="middle" opacity="0.85">Wi‑Fi</text>
+  <text x="700" y="465" fill="#e9e6ff" font-size="11.5" text-anchor="middle" opacity="0.85">reads live data</text>
+
+  <!-- ============ NODE 1 — WEARABLE ============ -->
+  <g transform="translate(115,300)">
+    <circle r="80" fill="url(#node1)" filter="url(#glow)"/>
+    <!-- wristband icon -->
+    <g transform="translate(-30,-24)" stroke="#ffffff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="14" y="6" width="32" height="24" rx="6"/>
+      <circle cx="30" cy="18" r="4.5" fill="#ffffff" stroke="none"/>
+      <path d="M14 12 C 2 15, 2 21, 14 24"/>
+      <path d="M46 12 C 58 15, 58 21, 46 24"/>
+    </g>
+    <text x="0" y="44" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Wearable</text>
+  </g>
+  <text x="115" y="410" fill="#ffe3d0" font-size="12" text-anchor="middle">heart rate · motion · flex · temp</text>
+
+  <!-- ============ NODE 2 — ESP-01 ============ -->
+  <g transform="translate(395,300)">
+    <circle r="80" fill="url(#node2)" filter="url(#glow)"/>
+    <!-- wifi chip icon -->
+    <g transform="translate(0,-6)" stroke="#ffffff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-22 6 C -8 -8, 8 -8, 22 6"/>
+      <path d="M-13 15 C -5 5, 5 5, 13 15"/>
+      <circle cx="0" cy="24" r="3.6" fill="#ffffff" stroke="none"/>
+    </g>
+    <text x="0" y="44" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Wi‑Fi Bridge</text>
+  </g>
+  <text x="395" y="410" fill="#dff6ff" font-size="12" text-anchor="middle">packages &amp; forwards readings</text>
+
+  <!-- ============ NODE 3 — CLOUD ============ -->
+  <g transform="translate(675,300)">
+    <circle r="80" fill="url(#node3)" filter="url(#glow)"/>
+    <!-- cloud icon -->
+    <g transform="translate(0,-4)" fill="#ffffff">
+      <path d="M-24 8 a12 12 0 0 1 3-23 a15 15 0 0 1 28-6 a11 11 0 0 1 15 15 a10 10 0 0 1 -3 20 z" opacity="0.98"/>
+    </g>
+    <text x="0" y="44" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Cloud Database</text>
+  </g>
+  <text x="675" y="410" fill="#fff3d6" font-size="12" text-anchor="middle">stores data · flags an alert</text>
+
+  <!-- ============ NODE 4 — SMART DOOR ============ -->
+  <g transform="translate(955,300)">
+    <circle r="80" fill="url(#node4)" filter="url(#glow)"/>
+    <!-- door/lock icon -->
+    <g transform="translate(0,-6)" stroke="#ffffff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="-14" y="-20" width="28" height="38" rx="3"/>
+      <circle cx="6" cy="0" r="2.4" fill="#ffffff" stroke="none"/>
+    </g>
+    <text x="0" y="44" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Smart Door</text>
+  </g>
+  <text x="955" y="410" fill="#e3fff5" font-size="12" text-anchor="middle">servo unlocks automatically</text>
+
+  <!-- ============ NODE 5 — MOBILE APP (below cloud) ============ -->
+  <g transform="translate(615,530)">
+    <circle r="72" fill="url(#node5)" filter="url(#glow)"/>
+    <!-- phone icon -->
+    <g transform="translate(0,-4)" stroke="#ffffff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="-13" y="-22" width="26" height="42" rx="6"/>
+      <line x1="-6" y1="14" x2="6" y2="14"/>
+    </g>
+    <text x="0" y="42" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Caregiver App</text>
+  </g>
+  <text x="615" y="628" fill="#f3e3ff" font-size="12" text-anchor="middle">live status · weekly report · alerts</text>
+
+  <!-- ============ OUTCOME BADGE ============ -->
+  <g transform="translate(115,530)">
+    <circle r="72" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 6" opacity="0.6"/>
+    <text x="0" y="-6" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">RESULT</text>
+    <text x="0" y="16" fill="#e9e6ff" font-size="12" text-anchor="middle">help reaches</text>
+    <text x="0" y="34" fill="#e9e6ff" font-size="12" text-anchor="middle">the person fast</text>
+  </g>
+  <path d="M 195 500 C 260 470, 260 470, 340 440" stroke="#ffffff" stroke-width="2" opacity="0.4" fill="none" stroke-dasharray="1 8" stroke-linecap="round"/>
+</svg>
