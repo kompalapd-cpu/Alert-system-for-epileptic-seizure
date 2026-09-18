@@ -32,6 +32,9 @@ docs/
     └── system_blueprint.svg / .png   # Architecture diagram
 ```
 
+## Block diagram
+![Block Diagram](docs/images/Block_diagram.png)
+
 ## Hardware used
 
 | Component | Role |
