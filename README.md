@@ -81,7 +81,8 @@ docs/
 
 Extending the platform beyond epilepsy to other conditions with similar monitoring needs — cardiac arrhythmias, sleep disorders, diabetic emergencies — using the same sensor-to-cloud-to-actuator pipeline.
 
-## License
+## Developed by
 K.Priyadarshini
+
 Osmania University 
 
