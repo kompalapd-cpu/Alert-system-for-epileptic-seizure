@@ -10,10 +10,6 @@
   set to "true" for the MCU to reach the database. See:
   https://github.com/Rupakpoddar/ESP8266Firebase
 
-  BEFORE UPLOADING: replace the placeholder values below with your own
-  WiFi credentials and Firebase project URL. Do NOT commit real
-  credentials to a public repository — put the placeholders back before
-  pushing any changes.
 */
 
 #include <ESP8266Firebase.h>
@@ -21,7 +17,7 @@
 #include <Servo.h>
 
 // ---------------------------------------------------------------------
-// Configuration — replace with your own values
+// Configuration 
 // ---------------------------------------------------------------------
 #define WIFI_SSID     "YOUR_WIFI_SSID"
 #define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
