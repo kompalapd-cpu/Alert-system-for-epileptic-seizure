@@ -1,15 +1,3 @@
-/*
-  ARCHIVED REFERENCE — not part of the final system.
-  Generic ESP8266 <-> STM32F103C8 AT-command webserver example
-  (adapted from Circuit Digest). Uses a local AT-command webserver instead
-  of Firebase, and was not part of the final Alert System pipeline. Kept
-  here for reference only.
-
-  BEFORE UPLOADING: replace the placeholder WiFi credentials below
-  (search for YOUR_WIFI_SSID / YOUR_WIFI_PASSWORD in wifi_init()) with
-  your own. Do NOT commit real credentials to a public GitHub repo.
-*/
-
 //NOTE: Serial is serial monitor with baud rate(9600)
 
 //NOTE: Serial2 (TX2, RX2)is connected with ESP8266(RX,TX)respectively with baud rate (9600)
