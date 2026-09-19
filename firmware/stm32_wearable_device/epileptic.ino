@@ -5,7 +5,7 @@
   Reads temperature/humidity, muscle-flex, heart-rate, and motion sensors,
   shows live readings on a 16x2 LCD, sounds a local alert on seizure
   detection, and periodically reports data to the ESP-01 Wi-Fi module
-  (see firmware/esp01_firebase_relay) over Serial2.
+  (see from firmware/esp01_firebase_relay) over Serial2.
 */
 
 #include <LiquidCrystal.h>
