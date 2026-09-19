@@ -2,19 +2,6 @@
   Alert System for Epileptic Seizures — ESP-01 Firebase Relay
   Board: ESP8266 (ESP-01)
 
-  Receives packed sensor readings from the STM32 wearable device over
-  Serial (see firmware/stm32_wearable_device), parses them, timestamps
-  them via NTP, and pushes them to Firebase Realtime Database. Also
-  flags the door to open when a seizure is detected.
-
-  IMPORTANT: your Firebase project's ".read" and ".write" rules must be
-  set to "true" for the MCU to reach the database. See:
-  https://github.com/Rupakpoddar/ESP8266Firebase
-
-  BEFORE UPLOADING: replace the placeholder values below with your own
-  WiFi credentials and Firebase project URL. Do NOT commit real
-  credentials to a public repository — put the placeholders back before
-  pushing any changes.
 */
 
 #include <ESP8266Firebase.h>
@@ -23,7 +10,7 @@
 #include <WiFiUdp.h>
 
 // ---------------------------------------------------------------------
-// Configuration — replace with your own values
+// Configuration 
 // ---------------------------------------------------------------------
 #define WIFI_SSID     "YOUR_WIFI_SSID"
 #define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
