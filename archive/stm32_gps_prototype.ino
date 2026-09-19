@@ -1,10 +1,3 @@
-/*
-  ARCHIVED PROTOTYPE — not part of the final system.
-  Early draft of the STM32 wearable sketch that explored GPS ($GPRMC parsing)
-  and an MQ gas sensor pin. Both were dropped from the final design in favor
-  of the flex / heart-rate / ADXL345 + Firebase pipeline documented in the
-  project report. Kept here for reference only.
-*/
 #include <LiquidCrystal.h>
 const int rs = PB12, en = PB13, d4 = PB14, d5 = PB15, d6 = PA11, d7 = PA12;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
